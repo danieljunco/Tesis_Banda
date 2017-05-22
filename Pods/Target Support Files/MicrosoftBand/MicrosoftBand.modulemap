@@ -1,0 +1,6 @@
+framework module MicrosoftBand {
+  umbrella header "MicrosoftBand-umbrella.h"
+
+  export *
+  module * { export * }
+}

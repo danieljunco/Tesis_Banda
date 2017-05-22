@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		670C69371862B5B54703AA34 /* Pods_Banda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC250B16E68D54954CAEE6C7 /* Pods_Banda.framework */; };
+		F2753CB61ED3897000879901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CB51ED3897000879901 /* AppDelegate.swift */; };
+		F2753CB81ED3897000879901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CB71ED3897000879901 /* ViewController.swift */; };
+		F2753CBB1ED3897000879901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2753CB91ED3897000879901 /* Main.storyboard */; };
+		F2753CBD1ED3897000879901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2753CBC1ED3897000879901 /* Assets.xcassets */; };
+		F2753CC01ED3897000879901 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2753CBE1ED3897000879901 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33DB65FE54719A33610E1D31 /* Pods-Banda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banda.release.xcconfig"; path = "Pods/Target Support Files/Pods-Banda/Pods-Banda.release.xcconfig"; sourceTree = "<group>"; };
+		AC250B16E68D54954CAEE6C7 /* Pods_Banda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Banda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB676800A0E3FEDC7BAEB10F /* Pods-Banda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Banda/Pods-Banda.debug.xcconfig"; sourceTree = "<group>"; };
+		F2753CB21ED3897000879901 /* Banda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2753CB51ED3897000879901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2753CB71ED3897000879901 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2753CBA1ED3897000879901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2753CBC1ED3897000879901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2753CBF1ED3897000879901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2753CC11ED3897000879901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2753CAF1ED3897000879901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670C69371862B5B54703AA34 /* Pods_Banda.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5576A1354ED7337512C5E95B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB676800A0E3FEDC7BAEB10F /* Pods-Banda.debug.xcconfig */,
+				33DB65FE54719A33610E1D31 /* Pods-Banda.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB46EE86EF2680DBC69FA7BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC250B16E68D54954CAEE6C7 /* Pods_Banda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2753CA91ED3897000879901 = {
+			isa = PBXGroup;
+			children = (
+				F2753CB41ED3897000879901 /* Banda */,
+				F2753CB31ED3897000879901 /* Products */,
+				5576A1354ED7337512C5E95B /* Pods */,
+				CB46EE86EF2680DBC69FA7BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2753CB31ED3897000879901 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2753CB21ED3897000879901 /* Banda.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2753CB41ED3897000879901 /* Banda */ = {
+			isa = PBXGroup;
+			children = (
+				F2753CB51ED3897000879901 /* AppDelegate.swift */,
+				F2753CB71ED3897000879901 /* ViewController.swift */,
+				F2753CB91ED3897000879901 /* Main.storyboard */,
+				F2753CBC1ED3897000879901 /* Assets.xcassets */,
+				F2753CBE1ED3897000879901 /* LaunchScreen.storyboard */,
+				F2753CC11ED3897000879901 /* Info.plist */,
+			);
+			path = Banda;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2753CB11ED3897000879901 /* Banda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2753CC41ED3897000879901 /* Build configuration list for PBXNativeTarget "Banda" */;
+			buildPhases = (
+				E6F1DCEB156B12ED7231D10A /* [CP] Check Pods Manifest.lock */,
+				F2753CAE1ED3897000879901 /* Sources */,
+				F2753CAF1ED3897000879901 /* Frameworks */,
+				F2753CB01ED3897000879901 /* Resources */,
+				B92973850F284CA55E3A9FB0 /* [CP] Embed Pods Frameworks */,
+				9922C5CE2519B5C617060997 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Banda;
+			productName = Banda;
+			productReference = F2753CB21ED3897000879901 /* Banda.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2753CAA1ED3897000879901 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Daniel Junco";
+				TargetAttributes = {
+					F2753CB11ED3897000879901 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8ZAXN7VW46;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F2753CAD1ED3897000879901 /* Build configuration list for PBXProject "Banda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2753CA91ED3897000879901;
+			productRefGroup = F2753CB31ED3897000879901 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2753CB11ED3897000879901 /* Banda */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2753CB01ED3897000879901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2753CC01ED3897000879901 /* LaunchScreen.storyboard in Resources */,
+				F2753CBD1ED3897000879901 /* Assets.xcassets in Resources */,
+				F2753CBB1ED3897000879901 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9922C5CE2519B5C617060997 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Banda/Pods-Banda-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B92973850F284CA55E3A9FB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Banda/Pods-Banda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6F1DCEB156B12ED7231D10A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2753CAE1ED3897000879901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2753CB81ED3897000879901 /* ViewController.swift in Sources */,
+				F2753CB61ED3897000879901 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2753CB91ED3897000879901 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2753CBA1ED3897000879901 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2753CBE1ED3897000879901 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2753CBF1ED3897000879901 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2753CC21ED3897000879901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2753CC31ED3897000879901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2753CC51ED3897000879901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB676800A0E3FEDC7BAEB10F /* Pods-Banda.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8ZAXN7VW46;
+				INFOPLIST_FILE = Banda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderevirator.Banda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F2753CC61ED3897000879901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33DB65FE54719A33610E1D31 /* Pods-Banda.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8ZAXN7VW46;
+				INFOPLIST_FILE = Banda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderevirator.Banda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2753CAD1ED3897000879901 /* Build configuration list for PBXProject "Banda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2753CC21ED3897000879901 /* Debug */,
+				F2753CC31ED3897000879901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2753CC41ED3897000879901 /* Build configuration list for PBXNativeTarget "Banda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2753CC51ED3897000879901 /* Debug */,
+				F2753CC61ED3897000879901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2753CAA1ED3897000879901 /* Project object */;
+}
