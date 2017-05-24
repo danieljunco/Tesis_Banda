@@ -10,9 +10,22 @@ import UIKit
 
 class SkinTemperatureViewController: UIViewController {
 
+    @IBOutlet weak var skinView: UIView!
     @IBOutlet weak var skinLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        skinView.layer.cornerRadius = 120
+        skinView.layer.borderWidth = 2
+        let c = GlobalVariables.sharedInstance.hexStringToUIColor(hex: "#f1c40f")
+        skinView.layer.borderColor = c.cgColor
+        skinView.layer.shadowColor = c.cgColor
+        skinView.layer.shadowOffset = CGSize(width: -3.75, height: -4)
+        skinView.layer.shadowRadius = 1.7
+        skinView.layer.shadowOpacity = 0.55
+        
         startSkinTemperature()
     }
     

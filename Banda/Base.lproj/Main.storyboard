@@ -582,6 +582,7 @@
                     <tabBarItem key="tabBarItem" title="Skin" image="Skin Filled_20" id="qLt-fT-EZh"/>
                     <connections>
                         <outlet property="skinLabel" destination="ZnI-nP-z8d" id="sww-SZ-8sj"/>
+                        <outlet property="skinView" destination="gnz-Hm-U77" id="leU-uJ-YLy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UE-Rm-tmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
