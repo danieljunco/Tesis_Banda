@@ -8,24 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		670C69371862B5B54703AA34 /* Pods_Banda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC250B16E68D54954CAEE6C7 /* Pods_Banda.framework */; };
+		F215E7E51ED496E9001C9DBF /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F215E7E41ED496E9001C9DBF /* MicrosoftBandKit_iOS.framework */; };
+		F2369A2C1ED4C69100A64796 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2369A2B1ED4C69100A64796 /* DesignableButton.swift */; };
+		F2369A2E1ED4C6A300A64796 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2369A2D1ED4C6A300A64796 /* DesignableView.swift */; };
+		F2369A311ED4C6EA00A64796 /* IntroDron-e.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2369A301ED4C6EA00A64796 /* IntroDron-e.mp4 */; };
+		F2369A331ED4C95000A64796 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2369A321ED4C95000A64796 /* DesignableTextField.swift */; };
+		F2369A351ED4C99300A64796 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2369A341ED4C99300A64796 /* IntroViewController.swift */; };
+		F2369A371ED4CE5100A64796 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2369A361ED4CE5000A64796 /* RegisterViewController.swift */; };
+		F2369A391ED4E35A00A64796 /* DescripcionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2369A381ED4E35A00A64796 /* DescripcionViewController.swift */; };
 		F2753CB61ED3897000879901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CB51ED3897000879901 /* AppDelegate.swift */; };
 		F2753CB81ED3897000879901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CB71ED3897000879901 /* ViewController.swift */; };
 		F2753CBB1ED3897000879901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2753CB91ED3897000879901 /* Main.storyboard */; };
-		F2753CBD1ED3897000879901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2753CBC1ED3897000879901 /* Assets.xcassets */; };
 		F2753CC01ED3897000879901 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2753CBE1ED3897000879901 /* LaunchScreen.storyboard */; };
+		F2A57B601ED5095700C51189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A57B5F1ED5095700C51189 /* Assets.xcassets */; };
+		F2A57B621ED50A3D00C51189 /* CaloriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A57B611ED50A3D00C51189 /* CaloriesViewController.swift */; };
+		F2A57B641ED5168600C51189 /* BandillaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A57B631ED5168600C51189 /* BandillaViewController.swift */; };
+		F2A57B661ED51D0D00C51189 /* RitmoCardiacoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A57B651ED51D0D00C51189 /* RitmoCardiacoViewController.swift */; };
+		F2A57B691ED5404700C51189 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A57B681ED5404700C51189 /* GlobalVariables.swift */; };
+		F2A57B6D1ED5472600C51189 /* SkinTemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A57B6C1ED5472600C51189 /* SkinTemperatureViewController.swift */; };
+		F2A57B6F1ED54B6700C51189 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2A57B6E1ED54B6700C51189 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33DB65FE54719A33610E1D31 /* Pods-Banda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banda.release.xcconfig"; path = "Pods/Target Support Files/Pods-Banda/Pods-Banda.release.xcconfig"; sourceTree = "<group>"; };
 		AC250B16E68D54954CAEE6C7 /* Pods_Banda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Banda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB676800A0E3FEDC7BAEB10F /* Pods-Banda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Banda/Pods-Banda.debug.xcconfig"; sourceTree = "<group>"; };
+		F215E7E41ED496E9001C9DBF /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicrosoftBandKit_iOS.framework; path = Pods/MicrosoftBand/MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		F2369A2B1ED4C69100A64796 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		F2369A2D1ED4C6A300A64796 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		F2369A301ED4C6EA00A64796 /* IntroDron-e.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntroDron-e.mp4"; sourceTree = "<group>"; };
+		F2369A321ED4C95000A64796 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		F2369A341ED4C99300A64796 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		F2369A361ED4CE5000A64796 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F2369A381ED4E35A00A64796 /* DescripcionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescripcionViewController.swift; sourceTree = "<group>"; };
 		F2753CB21ED3897000879901 /* Banda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2753CB51ED3897000879901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2753CB71ED3897000879901 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2753CBA1ED3897000879901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F2753CBC1ED3897000879901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2753CBF1ED3897000879901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2753CC11ED3897000879901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A57B5F1ED5095700C51189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2A57B611ED50A3D00C51189 /* CaloriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloriesViewController.swift; sourceTree = "<group>"; };
+		F2A57B631ED5168600C51189 /* BandillaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandillaViewController.swift; sourceTree = "<group>"; };
+		F2A57B651ED51D0D00C51189 /* RitmoCardiacoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RitmoCardiacoViewController.swift; sourceTree = "<group>"; };
+		F2A57B681ED5404700C51189 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		F2A57B6C1ED5472600C51189 /* SkinTemperatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinTemperatureViewController.swift; sourceTree = "<group>"; };
+		F2A57B6E1ED54B6700C51189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F215E7E51ED496E9001C9DBF /* MicrosoftBandKit_iOS.framework in Frameworks */,
 				670C69371862B5B54703AA34 /* Pods_Banda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,9 +81,43 @@
 		CB46EE86EF2680DBC69FA7BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F215E7E41ED496E9001C9DBF /* MicrosoftBandKit_iOS.framework */,
 				AC250B16E68D54954CAEE6C7 /* Pods_Banda.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2369A291ED4C57300A64796 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2369A361ED4CE5000A64796 /* RegisterViewController.swift */,
+				F2753CB71ED3897000879901 /* ViewController.swift */,
+				F2369A341ED4C99300A64796 /* IntroViewController.swift */,
+				F2369A381ED4E35A00A64796 /* DescripcionViewController.swift */,
+				F2A57B611ED50A3D00C51189 /* CaloriesViewController.swift */,
+				F2A57B631ED5168600C51189 /* BandillaViewController.swift */,
+				F2A57B651ED51D0D00C51189 /* RitmoCardiacoViewController.swift */,
+				F2A57B6C1ED5472600C51189 /* SkinTemperatureViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F2369A2A1ED4C66C00A64796 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				F2369A2B1ED4C69100A64796 /* DesignableButton.swift */,
+				F2369A2D1ED4C6A300A64796 /* DesignableView.swift */,
+				F2369A321ED4C95000A64796 /* DesignableTextField.swift */,
+			);
+			name = Designables;
+			sourceTree = "<group>";
+		};
+		F2369A2F1ED4C6DE00A64796 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				F2369A301ED4C6EA00A64796 /* IntroDron-e.mp4 */,
+			);
+			name = Video;
 			sourceTree = "<group>";
 		};
 		F2753CA91ED3897000879901 = {
@@ -78,14 +141,26 @@
 		F2753CB41ED3897000879901 /* Banda */ = {
 			isa = PBXGroup;
 			children = (
+				F2A57B671ED5403300C51189 /* Global Variables */,
+				F2A57B5F1ED5095700C51189 /* Assets.xcassets */,
+				F2369A2F1ED4C6DE00A64796 /* Video */,
+				F2369A2A1ED4C66C00A64796 /* Designables */,
+				F2369A291ED4C57300A64796 /* Controllers */,
 				F2753CB51ED3897000879901 /* AppDelegate.swift */,
-				F2753CB71ED3897000879901 /* ViewController.swift */,
 				F2753CB91ED3897000879901 /* Main.storyboard */,
-				F2753CBC1ED3897000879901 /* Assets.xcassets */,
 				F2753CBE1ED3897000879901 /* LaunchScreen.storyboard */,
 				F2753CC11ED3897000879901 /* Info.plist */,
+				F2A57B6E1ED54B6700C51189 /* GoogleService-Info.plist */,
 			);
 			path = Banda;
+			sourceTree = "<group>";
+		};
+		F2A57B671ED5403300C51189 /* Global Variables */ = {
+			isa = PBXGroup;
+			children = (
+				F2A57B681ED5404700C51189 /* GlobalVariables.swift */,
+			);
+			name = "Global Variables";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +198,7 @@
 				TargetAttributes = {
 					F2753CB11ED3897000879901 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 8ZAXN7VW46;
+						DevelopmentTeam = M8X36NSXK7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,8 +227,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2753CC01ED3897000879901 /* LaunchScreen.storyboard in Resources */,
-				F2753CBD1ED3897000879901 /* Assets.xcassets in Resources */,
 				F2753CBB1ED3897000879901 /* Main.storyboard in Resources */,
+				F2A57B6F1ED54B6700C51189 /* GoogleService-Info.plist in Resources */,
+				F2A57B601ED5095700C51189 /* Assets.xcassets in Resources */,
+				F2369A311ED4C6EA00A64796 /* IntroDron-e.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +289,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2369A2E1ED4C6A300A64796 /* DesignableView.swift in Sources */,
+				F2A57B6D1ED5472600C51189 /* SkinTemperatureViewController.swift in Sources */,
 				F2753CB81ED3897000879901 /* ViewController.swift in Sources */,
+				F2A57B661ED51D0D00C51189 /* RitmoCardiacoViewController.swift in Sources */,
+				F2369A371ED4CE5100A64796 /* RegisterViewController.swift in Sources */,
+				F2A57B641ED5168600C51189 /* BandillaViewController.swift in Sources */,
+				F2A57B621ED50A3D00C51189 /* CaloriesViewController.swift in Sources */,
+				F2A57B691ED5404700C51189 /* GlobalVariables.swift in Sources */,
+				F2369A331ED4C95000A64796 /* DesignableTextField.swift in Sources */,
+				F2369A391ED4E35A00A64796 /* DescripcionViewController.swift in Sources */,
+				F2369A351ED4C99300A64796 /* IntroViewController.swift in Sources */,
 				F2753CB61ED3897000879901 /* AppDelegate.swift in Sources */,
+				F2369A2C1ED4C69100A64796 /* DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,12 +427,18 @@
 			baseConfigurationReference = DB676800A0E3FEDC7BAEB10F /* Pods-Banda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8ZAXN7VW46;
+				DEVELOPMENT_TEAM = M8X36NSXK7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/MicrosoftBand",
+				);
 				INFOPLIST_FILE = Banda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coderevirator.Banda;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderevirator.Banda2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -353,12 +447,18 @@
 			baseConfigurationReference = 33DB65FE54719A33610E1D31 /* Pods-Banda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8ZAXN7VW46;
+				DEVELOPMENT_TEAM = M8X36NSXK7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/MicrosoftBand",
+				);
 				INFOPLIST_FILE = Banda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coderevirator.Banda;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderevirator.Banda2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -381,6 +481,7 @@
 				F2753CC61ED3897000879901 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
