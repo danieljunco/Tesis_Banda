@@ -16,6 +16,7 @@
 		F2369A351ED4C99300A64796 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2369A341ED4C99300A64796 /* IntroViewController.swift */; };
 		F2369A371ED4CE5100A64796 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2369A361ED4CE5000A64796 /* RegisterViewController.swift */; };
 		F2369A391ED4E35A00A64796 /* DescripcionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2369A381ED4E35A00A64796 /* DescripcionViewController.swift */; };
+		F26B93711ED62E0500BEEA7A /* PasosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26B93701ED62E0500BEEA7A /* PasosViewController.swift */; };
 		F2753CB61ED3897000879901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CB51ED3897000879901 /* AppDelegate.swift */; };
 		F2753CB81ED3897000879901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CB71ED3897000879901 /* ViewController.swift */; };
 		F2753CBB1ED3897000879901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2753CB91ED3897000879901 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		F2A57B691ED5404700C51189 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A57B681ED5404700C51189 /* GlobalVariables.swift */; };
 		F2A57B6D1ED5472600C51189 /* SkinTemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A57B6C1ED5472600C51189 /* SkinTemperatureViewController.swift */; };
 		F2A57B6F1ED54B6700C51189 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2A57B6E1ED54B6700C51189 /* GoogleService-Info.plist */; };
+		F2FDFA611ED675EB00B27702 /* DroneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDFA601ED675EB00B27702 /* DroneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,7 @@
 		F2369A341ED4C99300A64796 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		F2369A361ED4CE5000A64796 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F2369A381ED4E35A00A64796 /* DescripcionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescripcionViewController.swift; sourceTree = "<group>"; };
+		F26B93701ED62E0500BEEA7A /* PasosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasosViewController.swift; sourceTree = "<group>"; };
 		F2753CB21ED3897000879901 /* Banda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2753CB51ED3897000879901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2753CB71ED3897000879901 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		F2A57B681ED5404700C51189 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		F2A57B6C1ED5472600C51189 /* SkinTemperatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinTemperatureViewController.swift; sourceTree = "<group>"; };
 		F2A57B6E1ED54B6700C51189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2FDFA601ED675EB00B27702 /* DroneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				F2A57B631ED5168600C51189 /* BandillaViewController.swift */,
 				F2A57B651ED51D0D00C51189 /* RitmoCardiacoViewController.swift */,
 				F2A57B6C1ED5472600C51189 /* SkinTemperatureViewController.swift */,
+				F26B93701ED62E0500BEEA7A /* PasosViewController.swift */,
+				F2FDFA601ED675EB00B27702 /* DroneViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FDFA611ED675EB00B27702 /* DroneViewController.swift in Sources */,
 				F2369A2E1ED4C6A300A64796 /* DesignableView.swift in Sources */,
 				F2A57B6D1ED5472600C51189 /* SkinTemperatureViewController.swift in Sources */,
 				F2753CB81ED3897000879901 /* ViewController.swift in Sources */,
@@ -296,6 +303,7 @@
 				F2369A371ED4CE5100A64796 /* RegisterViewController.swift in Sources */,
 				F2A57B641ED5168600C51189 /* BandillaViewController.swift in Sources */,
 				F2A57B621ED50A3D00C51189 /* CaloriesViewController.swift in Sources */,
+				F26B93711ED62E0500BEEA7A /* PasosViewController.swift in Sources */,
 				F2A57B691ED5404700C51189 /* GlobalVariables.swift in Sources */,
 				F2369A331ED4C95000A64796 /* DesignableTextField.swift in Sources */,
 				F2369A391ED4E35A00A64796 /* DescripcionViewController.swift in Sources */,

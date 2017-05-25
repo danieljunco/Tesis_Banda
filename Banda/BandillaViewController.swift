@@ -9,8 +9,11 @@
 import UIKit
 import MicrosoftBandKit_iOS
 import MicrosoftBand
+import AFNetworking
 
 var mBand: MicrosoftBand!
+
+var caloriesNumero = ""
 
 class BandillaViewController: UIViewController, ConnectionDelegate {
     
@@ -26,8 +29,8 @@ class BandillaViewController: UIViewController, ConnectionDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        GlobalVariables.sharedInstance.displayAlertMessage(view: self, messageToDisplay: "Connecting to the Microsoft Band 2......")
+        crearContenedor()
+        GlobalVariables.sharedInstance.displayAlertMessage(view: self, messageToDisplay: "Connecting to Microsoft Band 2......")
         viewCalories.layer.cornerRadius = 120
         viewCalories.layer.borderWidth = 2
         let c = GlobalVariables.sharedInstance.hexStringToUIColor(hex: "#d35400")
@@ -76,8 +79,13 @@ class BandillaViewController: UIViewController, ConnectionDelegate {
                     if error != nil {
                         print("calories error \(error)")
                     } else {
-                        print("calories data \(data) \(data?.calories)")
-                        self.caloriesLabel.text = "\(data?.calories)"
+                        print("calories data \(data) \(data?.caloriesToday)")
+                        let numerocalorias = "\(data!.caloriesToday)"
+                        self.caloriesLabel.text = numerocalorias
+                        caloriesNumero = numerocalorias
+                        DispatchQueue.main.async {
+                            GlobalVariables.sharedInstance.registrarCalorias(calorias: numerocalorias)
+                        }
                     }
                 })
             }
@@ -88,6 +96,34 @@ class BandillaViewController: UIViewController, ConnectionDelegate {
             
         }
     }
+    
+    func crearContenedor(){
+        let params: [String:Any] = [
+            "container": [
+                "id":"CaloriasContainer"
+            ]
+        ]
+        
+        manager.requestSerializer = AFJSONRequestSerializer()
+        
+        manager.post("/m2m/applications/DroneFit/containers", parameters: params, progress: { (progress) in
+            
+        }, success: { (task:URLSessionDataTask, response) in
+            let dictionaryResponse: NSDictionary = response! as! NSDictionary
+            print(dictionaryResponse)
+            let alertController = UIAlertController(title: "Contenedor Creado", message: dictionaryResponse["contentInstance"] as? String, preferredStyle: .alert)
+            
+            let volverAction = UIAlertAction(title: "Regresar", style: .default) { (action: UIAlertAction) in
+                alertController.dismiss(animated: true, completion: nil)
+            }
+            alertController.addAction(volverAction)
+            self.present(alertController, animated: true)
+        }) { (task: URLSessionDataTask?, error: Error) in
+            GlobalVariables.sharedInstance.displayAlertMessage(view: self, messageToDisplay: "Error en la solicitud")
+        }
+        
+    }
+
     
     
     

@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import AFNetworking
+
 
 class IntroViewController: UIViewController {
     
@@ -82,6 +84,25 @@ class IntroViewController: UIViewController {
         
     }
     
+    @IBAction func crearApp(_ sender: Any) {
+        print("Entra")
+        let params: [String:Any] = [
+            "application": [
+                "appId":"myApp3"
+            ]
+        ]
+        
+        manager.requestSerializer = AFJSONRequestSerializer()
+        
+        manager.post("/m2m/applications", parameters: params, progress: { (progress) in
+            
+        }, success: { (task:URLSessionDataTask, response) in
+            let dictionaryResponse: NSDictionary = response! as! NSDictionary
+            print(dictionaryResponse)
+        }) { (task: URLSessionDataTask?, error: Error) in
+            self.showAlert(title: "Error en la solicitud", message: error.localizedDescription, closeButtonTitle: "Cerrar")
+        }
+    }
     func showAlert(title: String, message:String, closeButtonTitle:String){
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -94,6 +115,36 @@ class IntroViewController: UIViewController {
             
         }
     }
+    
+    func crearAplicacion(){
+        
+        let params: [String:Any] = [
+            "application": [
+                "appId":"myApp3"
+            ]
+        ]
+        
+        manager.requestSerializer = AFJSONRequestSerializer()
+        
+        manager.post("/m2m/applications", parameters: params, progress: { (progress) in
+            
+        }, success: { (task:URLSessionDataTask, response) in
+            let dictionaryResponse: NSDictionary = response! as! NSDictionary
+            print(dictionaryResponse)
+            let alertController = UIAlertController(title: "Aplicacion registrada", message: dictionaryResponse["msg"] as? String, preferredStyle: .alert)
+            
+            let volverAction = UIAlertAction(title: "Regresar", style: .default) { (action: UIAlertAction) in
+                self.dismiss(animated: true, completion: nil)
+            }
+            alertController.addAction(volverAction)
+            self.present(alertController, animated: true){
+            }
+        }) { (task: URLSessionDataTask?, error: Error) in
+            print("ERROROROROROROROROROR, \(error.localizedDescription)")
+        }
+        
+    }
+
 
     
     

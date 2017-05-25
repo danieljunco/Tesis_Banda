@@ -7,5 +7,10 @@ target 'Banda' do
 
   # Pods for Banda
   pod 'MicrosoftBand'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'AFNetworking','~>3.0'
+  pod 'Firebase/Database'
 
 end

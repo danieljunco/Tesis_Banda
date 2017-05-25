@@ -8,6 +8,8 @@
 
 import UIKit
 
+var skinTemperature = ""
+
 class SkinTemperatureViewController: UIViewController {
 
     @IBOutlet weak var skinView: UIView!
@@ -40,7 +42,10 @@ class SkinTemperatureViewController: UIViewController {
                         print("temperature error \(error)")
                     } else {
                         print("temperature data \(data) \(data?.temperature)")
-                        self.skinLabel.text = "\(data?.temperature)"
+                        let temperatura = "\(Double(round((100*data!.temperature)/100)))"
+                        self.skinLabel.text = temperatura
+                        skinTemperature = temperatura
+                        
                     }
                 })
             }

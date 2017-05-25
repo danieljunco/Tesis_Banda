@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Caloric Energy_20.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Caloric Energy_100.png",
+      "filename" : "Caloric Energy_50.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Caloric Energy_100.png",
       "scale" : "3x"
     }
   ],

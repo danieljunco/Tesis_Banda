@@ -77,6 +77,7 @@ class CaloriesViewController: UIViewController, ConnectionDelegate {
                         self.valoresRitmo.append((data?.calories)!)
                         DispatchQueue.main.async{
                             self.paint()
+                            GlobalVariables.sharedInstance.registrarCalorias(calorias: String(self.valoresRitmo.removeLast()))
                         }
                     }
                 })

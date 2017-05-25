@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AFNetworking
 
 class GlobalVariables: NSObject {
     
@@ -15,6 +16,67 @@ class GlobalVariables: NSObject {
     static let sharedInstance = GlobalVariables()
     //Previene otras calses usar el '()' inicializador de esta clase.
     private override init() {}
+    
+    
+    func registrarCalorias(calorias: String){
+        let params: [String:Any] = [
+            "Calorias": calorias
+        ]
+        
+        manager.requestSerializer = AFJSONRequestSerializer()
+        
+        manager.post("/m2m/applications/DroneFit/containers/CaloriasContainer/contentInstances", parameters: params, progress: { (progress) in
+            
+        }, success: { (task:URLSessionDataTask, response) in
+            let dictionaryResponse: NSDictionary = response! as! NSDictionary
+            print(dictionaryResponse)
+        }) { (task: URLSessionDataTask?, error: Error) in
+            print("Error")
+        }
+
+    }
+    
+    func registrarRitmoCardiaco(ritmo: String){
+        let params: [String:Any] = [
+            "Ritmo": ritmo
+        ]
+        
+        manager.requestSerializer = AFJSONRequestSerializer()
+        
+        manager.post("/m2m/applications/DroneFit/containers/RitmoCardiacoContainer/contentInstances", parameters: params, progress: { (progress) in
+            
+        }, success: { (task:URLSessionDataTask, response) in
+            let dictionaryResponse: NSDictionary = response! as! NSDictionary
+            print(dictionaryResponse)
+        }) { (task: URLSessionDataTask?, error: Error) in
+            print("Error")
+        }
+
+    }
+    
+    
+    func registrarSensores(calorias: String, ritmo: String, pasos: String, temperatura: String){
+        let params: [String:Any] = [
+            "Calorias":calorias,
+            "Ritmo": ritmo,
+            "Pasos":pasos,
+            "Temperatura":temperatura
+            
+            
+        ]
+        
+        manager.requestSerializer = AFJSONRequestSerializer()
+        
+        manager.post("/m2m/applications/DroneFit/containers/SensoresContainer/contentInstances", parameters: params, progress: { (progress) in
+            
+        }, success: { (task:URLSessionDataTask, response) in
+            let dictionaryResponse: NSDictionary = response! as! NSDictionary
+            print(dictionaryResponse)
+        }) { (task: URLSessionDataTask?, error: Error) in
+            print("Error")
+        }
+        
+    }
     
     func hexStringToUIColor (hex:String) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()

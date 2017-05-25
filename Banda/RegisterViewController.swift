@@ -7,7 +7,8 @@
 //
 
 import UIKit
-//import FirebaseAuth
+import FirebaseAuth
+import AFNetworking
 
 class RegisterViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
@@ -25,6 +26,9 @@ class RegisterViewController: UIViewController,UIPickerViewDataSource, UIPickerV
     override func viewDidLoad() {
         super.viewDidLoad()
         customPicker()
+        
+        self.navigationItem.setHidesBackButton(false, animated: true)
+        
         self.perfilPicker.delegate = self
         self.perfilPicker.dataSource = self
         
@@ -43,24 +47,58 @@ class RegisterViewController: UIViewController,UIPickerViewDataSource, UIPickerV
     }
     @IBAction func buttonTapped(_ sender: Any) {
         
-        performSegue(withIdentifier: "GoToDashBoard", sender: self)
-        /*
+        //performSegue(withIdentifier: "GoToDashBoard", sender: self)
+        
         if let email = emailTextField.text, let password = passwordTextField.text{
             
             
             if isSign {
-                FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
                     if let u = user {
                         print("Usuario se registro \(u)")
+                        print("Entra")
+                        let params: [String:Any] = [
+                            "application": [
+                                "appId":"DroneFit"
+                            ]
+                        ]
+                        
+                        manager.requestSerializer = AFJSONRequestSerializer()
+                        
+                        manager.post("/m2m/applications", parameters: params, progress: { (progress) in
+                            
+                        }, success: { (task:URLSessionDataTask, response) in
+                            let dictionaryResponse: NSDictionary = response! as! NSDictionary
+                            print(dictionaryResponse)
+                        }) { (task: URLSessionDataTask?, error: Error) in
+                            print("Error")
+                        }
                         self.performSegue(withIdentifier: "GoToDashBoard", sender: self)
                     }else{
                         GlobalVariables.sharedInstance.displayAlertMessage(view: self, messageToDisplay: (error?.localizedDescription)!)
                     }
                 })
             }else {
-                FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+                Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                     if let u = user {
                         print("Usuario se registro \(u)")
+                        print("Entra")
+                        let params: [String:Any] = [
+                            "application": [
+                                "appId":"DroneFit"
+                            ]
+                        ]
+                        
+                        manager.requestSerializer = AFJSONRequestSerializer()
+                        
+                        manager.post("/m2m/applications", parameters: params, progress: { (progress) in
+                            
+                        }, success: { (task:URLSessionDataTask, response) in
+                            let dictionaryResponse: NSDictionary = response! as! NSDictionary
+                            print(dictionaryResponse)
+                        }) { (task: URLSessionDataTask?, error: Error) in
+                            print("Error")
+                        }
                         self.performSegue(withIdentifier: "GoToDashBoard", sender: self)
                     }else {
                         GlobalVariables.sharedInstance.displayAlertMessage(view: self, messageToDisplay: (error?.localizedDescription)!)
@@ -68,7 +106,6 @@ class RegisterViewController: UIViewController,UIPickerViewDataSource, UIPickerV
                 })
             }
         }
- */
     }
     
     func customPicker(){
@@ -118,6 +155,7 @@ class RegisterViewController: UIViewController,UIPickerViewDataSource, UIPickerV
     }
     
 
+        
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

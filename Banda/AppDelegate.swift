@@ -7,6 +7,13 @@
 //
 
 import UIKit
+import Firebase
+import AFNetworking
+
+
+//Aca se pone la direccion IP de la MTC
+var baseURL: URL = URL(string: "http://192.168.1.139:4000")!
+let manager = AFHTTPSessionManager(baseURL: baseURL as URL!)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        application.statusBarStyle = .lightContent
+        FirebaseApp.configure()
         return true
     }
 
